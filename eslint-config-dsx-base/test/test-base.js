@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-// eslint-disable-next-line node/no-unpublished-require
 const test = require('tape');
 
 const index = require('..');

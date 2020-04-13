@@ -1,8 +1,7 @@
 {
-  "name": "eslint-config-dsx-node",
+  "name": "eslint-config-dsx-base",
   "version": "1.0.0",
   "description": "DSX's base JS Eslint config",
-  "private": true,
   "main": "index.js",
   "scripts": {
     "prelint": "eclint check * rules/*",
