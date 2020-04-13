@@ -1,10 +1,10 @@
 module.exports = {
   extends: [
-    'plugin:unicorn/recommended',
     'plugin:prettier/recommended',
+    'prettier/@typescript-eslint',
     'prettier/unicorn',
   ],
-  plugins: ['unicorn', 'prettier'],
+  plugins: ['prettier'],
   rules: {
     'prettier/prettier': [
       'error',
@@ -26,16 +26,5 @@ module.exports = {
         printWidth: 80,
       },
     ],
-    'unicorn/filename-case': ['error', { case: 'kebabCase' }],
-    'unicorn/no-abusive-eslint-disable': 'error',
-    'unicorn/catch-error-name': 'error',
-    'prefer-exponentiation-operator': 'error',
-    'unicorn/prefer-exponentiation-operator': 'off',
-    'unicorn/better-regex': 'error',
-    'unicorn/regex-shorthand': 'off',
-    curly: ['error', 'multi'],
-    'array-bracket-even-spacing': 'off',
-    'computed-property-even-spacing': 'off',
-    'object-curly-even-spacing': 'off',
   },
 };

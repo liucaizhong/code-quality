@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-dsx-base",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "DSX's base JS Eslint config",
   "main": "index.js",
   "scripts": {
@@ -34,6 +34,7 @@
     "node": ">=13"
   },
   "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
     "babel-eslint": "^10.0.3",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-prettier": "^6.10.0",
@@ -51,6 +52,7 @@
     "prettier": "^2.0.4"
   },
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
     "babel-eslint": "^10.0.3",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
