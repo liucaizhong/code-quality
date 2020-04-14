@@ -1,6 +1,5 @@
 module.exports = {
-  extends: ['airbnb', 'airbnb/hooks', 'plugin:react/recommended'],
-  plugins: ['react'],
+  extends: ['airbnb', 'airbnb/hooks'],
   parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 2020,
@@ -13,6 +12,6 @@ module.exports = {
   settings: {
     react: {
       version: 'detect',
-    }
-  }
+    },
+  },
 };

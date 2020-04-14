@@ -19,7 +19,7 @@ Object.keys(files).forEach(name => {
     // scan plugins for react and fail if it is found
     const hasReactPlugin =
       Object.prototype.hasOwnProperty.call(config, 'plugins') &&
-      config.plugins.indexOf('react') !== -1;
+      config.plugins.includes('react');
     t.notOk(hasReactPlugin, 'there is no react plugin');
 
     // scan rules for react/ and fail if any exist

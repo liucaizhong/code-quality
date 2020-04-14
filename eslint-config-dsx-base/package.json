@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-dsx-base",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "DSX's base JS Eslint config",
   "main": "index.js",
   "scripts": {

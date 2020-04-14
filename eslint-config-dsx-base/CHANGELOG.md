@@ -1,3 +1,8 @@
+2.0.2 / 2020-04-14
+==================
+
+- [fix] remove bracket from `import/no-dynamic-require`
+
 2.0.1 / 2020-04-14
 ==================
 

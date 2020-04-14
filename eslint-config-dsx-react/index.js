@@ -1,7 +1,6 @@
 module.exports = {
-  extends: [
-    'eslint-config-dsx-base',
-    './rules/best-practices',
-  ].map(require.resolve),
+  extends: ['./rules/best-practices', 'eslint-config-dsx-base'].map(
+    require.resolve,
+  ),
   rules: {},
 };

@@ -15,7 +15,7 @@ module.exports = {
   plugins: ['promise'],
   rules: {
     'import/no-unresolved': ['error', { commonjs: true }],
-    'import/no-dynamic-require': ['warn'],
+    'import/no-dynamic-require': 'warn',
     'promise/param-names': 'error',
     'promise/prefer-await-to-callbacks': 'error',
     'promise/prefer-await-to-then': 'error',
