@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['airbnb-base', 'plugin:unicorn/recommended',],
+  extends: ['airbnb-base', 'plugin:unicorn/recommended'],
   plugins: ['unicorn', 'optimize-regex'],
   rules: {
     'optimize-regex/optimize-regex': 'warn',
