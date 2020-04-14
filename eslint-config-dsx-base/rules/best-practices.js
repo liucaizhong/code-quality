@@ -1,6 +1,7 @@
 module.exports = {
   extends: ['airbnb-base', 'plugin:unicorn/recommended'],
   plugins: ['unicorn', 'optimize-regex'],
+  parser: 'babel-eslint',
   rules: {
     'optimize-regex/optimize-regex': 'warn',
     'handle-callback-err': ['error', '^.*(e|E)rr'],

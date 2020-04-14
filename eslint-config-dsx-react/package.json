@@ -1,0 +1,61 @@
+{
+  "name": "eslint-config-dsx-react",
+  "version": "1.0.0",
+  "description": "DSX's react Eslint config",
+  "main": "index.js",
+  "scripts": {
+    "prelint": "eclint check * rules/*",
+    "lint": "eslint --report-unused-disable-directives . --fix",
+    "pretests-only": "node ./test/requires",
+    "tests-only": "babel-tape-runner ./test/test-*.js",
+    "prepare": "(in-install || eslint-find-rules --unused) && (not-in-publish || npm test) && safe-publish-latest",
+    "pretest": "npm run --silent lint",
+    "test": "npm run --silent tests-only"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liucaizhong/code-quality"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "javascript",
+    "styleguide",
+    "es2020",
+    "react"
+  ],
+  "author": "Caizhong Liu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liucaizhong/code-quality/issues"
+  },
+  "homepage": "https://github.com/liucaizhong/code-quality",
+  "engines": {
+    "node": ">=13"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-config-prettier": "^6.10.0",
+    "prettier": "^2.0.4"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-config-prettier": "^6.10.0",
+    "prettier": "^2.0.4"
+  },
+  "devDependencies": {
+    "babel-tape-runner": "^3.0.0",
+    "eclint": "^2.8.1",
+    "eslint-find-rules": "^3.4.0",
+    "in-publish": "^2.0.1",
+    "safe-publish-latest": "^1.1.4",
+    "tape": "^4.13.2"
+  }
+}
