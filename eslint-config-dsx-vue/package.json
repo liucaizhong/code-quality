@@ -1,11 +1,11 @@
 {
-  "name": "eslint-config-dsx-react",
-  "version": "1.0.2",
-  "description": "DSX's react Eslint config",
+  "name": "eslint-config-dsx-vue",
+  "version": "1.0.0",
+  "description": "DSX's vue Eslint config",
   "main": "index.js",
   "scripts": {
     "prelint": "eclint check * rules/*",
-    "lint": "eslint --report-unused-disable-directives . --fix",
+    "lint": "eslint --report-unused-disable-directives . --ext .js --fix",
     "pretests-only": "node ./test/requires",
     "tests-only": "babel-tape-runner ./test/test-*.js",
     "prepare": "(in-install || eslint-find-rules --unused) && (not-in-publish || npm test) && safe-publish-latest",
@@ -23,7 +23,7 @@
     "javascript",
     "styleguide",
     "es2020",
-    "react"
+    "vue"
   ],
   "author": "Caizhong Liu",
   "license": "MIT",
@@ -38,26 +38,24 @@
     "@typescript-eslint/eslint-plugin": "^2.27.0",
     "@typescript-eslint/parser": "^2.28.0",
     "babel-eslint": "^10.0.3",
+    "vue-eslint-parser": "^7.0.0",
     "eslint": "^6.8.0",
     "eslint-config-dsx-base": "^2.0.2",
-    "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react-hooks": "^3.0.0",
-    "eslint-config-airbnb": "^18.1.0",
     "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-vue": "^7.0.0-alpha.1",
     "prettier": "^2.0.4"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.27.0",
     "@typescript-eslint/parser": "^2.28.0",
     "babel-eslint": "^10.0.3",
+    "vue-eslint-parser": "^7.0.0",
     "eslint": "^6.8.0",
+    "eslint-plugin-vue": "^7.0.0-alpha.1",
     "eslint-config-dsx-base": "^2.0.2",
-    "eslint-config-airbnb": "^18.1.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-react-hooks": "^3.0.0",
     "prettier": "^2.0.4"
   },
   "devDependencies": {

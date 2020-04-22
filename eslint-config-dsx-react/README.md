@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/eslint-config-dsx-react.svg)](http://badge.fury.io/js/eslint-config-dsx-react)
 
-This package provides DSX's base JS .eslintrc (without React plugins) as an extensible shared config.
+This package provides DSX's react .eslintrc as an extensible shared config.
 
 ## Usage
 
