@@ -1,0 +1,11 @@
+**/node_modules/
+**/test/
+**/Dockerfile
+**/.dockerignore
+**/.gitignore
+**/.git
+**/README.md
+**/.npmignore
+**/LICENSE.md
+**/CHANGELOG.md
+Makefile

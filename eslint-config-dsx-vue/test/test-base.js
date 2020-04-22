@@ -27,10 +27,13 @@ Object.keys(files).forEach(name => {
       ruleId => ruleId.indexOf('vue/') === 0,
     );
 
-    if (!name.localeCompare('best-practices.js') || !name.localeCompare('index.js')) {
-      t.notEqual(vueRuleIds.length, 0, 'there is no unused vue rules')
+    if (
+      !name.localeCompare('best-practices.js') ||
+      !name.localeCompare('index.js')
+    ) {
+      t.notEqual(vueRuleIds.length, 0, 'there is no unused vue rules');
     } else {
-      t.isEqual(vueRuleIds.length, 0, 'there is unused vue rules')
+      t.isEqual(vueRuleIds.length, 0, 'there is unused vue rules');
     }
   });
 });

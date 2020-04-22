@@ -1,11 +1,11 @@
 {
   "name": "eslint-config-dsx-vue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "DSX's vue Eslint config",
   "main": "index.js",
   "scripts": {
     "prelint": "eclint check * rules/*",
-    "lint": "eslint --report-unused-disable-directives . --ext .js --fix",
+    "lint": "eslint --report-unused-disable-directives . --fix",
     "pretests-only": "node ./test/requires",
     "tests-only": "babel-tape-runner ./test/test-*.js",
     "prepare": "(in-install || eslint-find-rules --unused) && (not-in-publish || npm test) && safe-publish-latest",
