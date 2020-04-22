@@ -13,19 +13,24 @@ fs.readdirSync(path.join(__dirname, '../rules')).forEach(name => {
 Object.keys(files).forEach(name => {
   const config = files[name];
 
-  test(`${name}: does not reference react`, t => {
+  test(`${name}: does not reference vue`, t => {
     t.plan(2);
 
-    // scan plugins for react and fail if it is found
-    const hasReactPlugin =
+    // scan plugins for vue and fail if it is found
+    const hasVuePlugin =
       Object.prototype.hasOwnProperty.call(config, 'plugins') &&
-      config.plugins.includes('react');
-    t.notOk(hasReactPlugin, 'there is no react plugin');
+      config.plugins.includes('vue');
+    t.notOk(hasVuePlugin, 'there is no vue plugin');
 
-    // scan rules for react/ and fail if any exist
-    const reactRuleIds = Object.keys(config.rules).filter(
-      ruleId => ruleId.indexOf('react/') === 0,
+    // scan unused rules for vue/ and success if any exist
+    const vueRuleIds = Object.keys(config.rules).filter(
+      ruleId => ruleId.indexOf('vue/') === 0,
     );
-    t.deepEquals(reactRuleIds, [], 'there are no react/ rules');
+
+    if (!name.localeCompare('best-practices.js') || !name.localeCompare('index.js')) {
+      t.notEqual(vueRuleIds.length, 0, 'there is no unused vue rules')
+    } else {
+      t.isEqual(vueRuleIds.length, 0, 'there is unused vue rules')
+    }
   });
 });
