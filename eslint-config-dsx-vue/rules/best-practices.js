@@ -11,5 +11,8 @@ module.exports = {
       legacyDecorators: true,
     },
   },
-  rules: {},
+  rules: {
+    'global-require': 'warn',
+    'import/no-dynamic-require': 'warn',
+  },
 };

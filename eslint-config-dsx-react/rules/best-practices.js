@@ -8,7 +8,10 @@ module.exports = {
       jsx: true,
     },
   },
-  rules: {},
+  rules: {
+    'global-require': 'warn',
+    'import/no-dynamic-require': 'warn',
+  },
   settings: {
     react: {
       version: 'detect',
