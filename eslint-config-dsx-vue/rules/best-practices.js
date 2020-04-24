@@ -10,6 +10,7 @@ module.exports = {
       jsx: true,
       legacyDecorators: true,
     },
+    extraFileExtensions: ['.vue'],
   },
   rules: {
     'global-require': 'warn',

@@ -1,7 +1,12 @@
+1.0.5 / 2020-04-24
+==================
+
+- [fix]: Add `extraFileExtensions` to `parserOptions`.
+
 1.0.3 / 2020-04-24
 ==================
 
-- [fix]: Add parserOptions for typecript.js.
+- [fix]: Add `parserOptions` for `typecript.js`.
 
 1.0.1 / 2020-04-22
 ==================
