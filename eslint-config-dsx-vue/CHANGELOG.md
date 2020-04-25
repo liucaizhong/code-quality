@@ -1,3 +1,8 @@
+1.0.7 / 2020-04-24
+==================
+
+- [fix]: Add `import/extensions` and `import/no-unresolved` to "off".
+  
 1.0.5 / 2020-04-24
 ==================
 

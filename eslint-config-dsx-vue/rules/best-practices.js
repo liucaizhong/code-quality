@@ -1,6 +1,20 @@
 module.exports = {
   extends: ['plugin:vue/vue3-recommended', 'plugin:jsx-a11y/recommended'],
   plugins: ['jsx-a11y'],
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.ts', '.js', '.json', '.tsx', '.jsx', '.vue']
+      },
+    },
+    'import/extensions': [
+      '.js',
+      '.jsx',
+      '.ts',
+      '.tsx',
+      '.vue'
+    ]
+  },
   parser: 'vue-eslint-parser',
   parserOptions: {
     parser: 'babel-eslint',
@@ -13,8 +27,19 @@ module.exports = {
     extraFileExtensions: ['.vue'],
   },
   rules: {
-    'global-require': 'warn',
-    'import/no-dynamic-require': 'warn',
+    'global-require': 'off',
+    'import/no-dynamic-require': 'off',
+    'import/extensions': [
+      'error',
+      'always',
+      {
+        'ts': 'never',
+        'tsx': 'never',
+        'js': 'never',
+        'jsx': 'never',
+        'vue': 'never'
+      }
+    ],
     'jsx-a11y/lang': 'error',
     'vue/array-bracket-spacing': 'off',
     'vue/arrow-spacing': 'off',

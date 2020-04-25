@@ -8,9 +8,33 @@ module.exports = {
       jsx: true,
     },
   },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.ts', '.js', '.json', '.tsx', '.jsx']
+      },
+    },
+    'import/extensions': [
+      '.js',
+      '.jsx',
+      '.ts',
+      '.tsx'
+    ]
+  },
   rules: {
-    'global-require': 'warn',
-    'import/no-dynamic-require': 'warn',
+    'global-require': 'off',
+    'import/no-dynamic-require': 'off',
+    'react/jsx-filename-extension': ['error', { 'extensions': ['.js', '.jsx', '.ts', '.tsx'] }],
+    'import/extensions': [
+      'error',
+      'always',
+      {
+        'ts': 'never',
+        'tsx': 'never',
+        'js': 'never',
+        'jsx': 'never'
+      }
+    ],
   },
   settings: {
     react: {
