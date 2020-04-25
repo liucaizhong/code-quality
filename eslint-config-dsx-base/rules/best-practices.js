@@ -4,15 +4,10 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.ts', '.js', '.json', '.tsx', '.jsx']
+        extensions: ['.ts', '.js', '.json', '.tsx', '.jsx'],
       },
     },
-    'import/extensions': [
-      '.js',
-      '.jsx',
-      '.ts',
-      '.tsx'
-    ]
+    'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],
   },
   parser: 'babel-eslint',
   rules: {
@@ -30,18 +25,21 @@ module.exports = {
     'unicorn/prefer-exponentiation-operator': 'off',
     'unicorn/better-regex': 'error',
     'unicorn/regex-shorthand': 'off',
-    'unicorn/prevent-abbreviations': ['error', {
-      checkFilenames: false,
-    }],
+    'unicorn/prevent-abbreviations': [
+      'error',
+      {
+        checkFilenames: false,
+      },
+    ],
     'import/extensions': [
       'error',
       'always',
       {
-        'ts': 'never',
-        'tsx': 'never',
-        'js': 'never',
-        'jsx': 'never'
-      }
+        ts: 'never',
+        tsx: 'never',
+        js: 'never',
+        jsx: 'never',
+      },
     ],
   },
 };

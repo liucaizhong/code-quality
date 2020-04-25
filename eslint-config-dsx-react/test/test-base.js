@@ -26,6 +26,13 @@ Object.keys(files).forEach(name => {
     const reactRuleIds = Object.keys(config.rules).filter(
       ruleId => ruleId.indexOf('react/') === 0,
     );
-    t.deepEquals(reactRuleIds, [], 'there are no react/ rules');
+    if (
+      !name.localeCompare('best-practices.js') ||
+      !name.localeCompare('index.js')
+    ) {
+      t.notEqual(reactRuleIds.length, 0, 'there is no unused react rules');
+    } else {
+      t.isEqual(reactRuleIds.length, 0, 'there is unused react rules');
+    }
   });
 });

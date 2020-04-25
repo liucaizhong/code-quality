@@ -6,13 +6,13 @@ module.exports = {
   ],
   settings: {
     'import/parsers': {
-      '@typescript-eslint/parser': ['.ts','.tsx']
-     },
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
+    },
   },
   plugins: ['@typescript-eslint'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: ['./tsconfig.json']
+    project: ['./tsconfig.json'],
   },
   rules: {
     '@typescript-eslint/no-var-requires': 'warn',

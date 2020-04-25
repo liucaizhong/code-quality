@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-dsx-vue",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "description": "DSX's vue Eslint config",
   "main": "index.js",
   "scripts": {

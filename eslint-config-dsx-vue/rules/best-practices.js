@@ -4,16 +4,10 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.ts', '.js', '.json', '.tsx', '.jsx', '.vue']
+        extensions: ['.ts', '.js', '.json', '.tsx', '.jsx'],
       },
     },
-    'import/extensions': [
-      '.js',
-      '.jsx',
-      '.ts',
-      '.tsx',
-      '.vue'
-    ]
+    'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],
   },
   parser: 'vue-eslint-parser',
   parserOptions: {
@@ -33,12 +27,11 @@ module.exports = {
       'error',
       'always',
       {
-        'ts': 'never',
-        'tsx': 'never',
-        'js': 'never',
-        'jsx': 'never',
-        'vue': 'never'
-      }
+        ts: 'never',
+        tsx: 'never',
+        js: 'never',
+        jsx: 'never',
+      },
     ],
     'jsx-a11y/lang': 'error',
     'vue/array-bracket-spacing': 'off',

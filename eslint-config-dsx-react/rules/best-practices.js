@@ -11,34 +11,32 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.ts', '.js', '.json', '.tsx', '.jsx']
+        extensions: ['.ts', '.js', '.json', '.tsx', '.jsx'],
       },
     },
-    'import/extensions': [
-      '.js',
-      '.jsx',
-      '.ts',
-      '.tsx'
-    ]
+    'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],
+    react: {
+      version: 'detect',
+    },
   },
   rules: {
     'global-require': 'off',
     'import/no-dynamic-require': 'off',
-    'react/jsx-filename-extension': ['error', { 'extensions': ['.js', '.jsx', '.ts', '.tsx'] }],
+    'react/jsx-filename-extension': [
+      'error',
+      {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    ],
     'import/extensions': [
       'error',
       'always',
       {
-        'ts': 'never',
-        'tsx': 'never',
-        'js': 'never',
-        'jsx': 'never'
-      }
+        ts: 'never',
+        tsx: 'never',
+        js: 'never',
+        jsx: 'never',
+      },
     ],
-  },
-  settings: {
-    react: {
-      version: 'detect',
-    },
   },
 };

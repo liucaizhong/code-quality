@@ -1,3 +1,13 @@
+1.1.0 / 2020-04-25
+==================
+
+- [fix] remove `.vue` from `import/extensions` and `import/resolver`
+
+1.0.9 / 2020-04-25
+==================
+
+- [fix] add `import/extensions` and `import/resolver`
+
 1.0.7 / 2020-04-24
 ==================
 
