@@ -1,8 +1,8 @@
 module.exports = {
   extends: [
+    'prettier/unicorn',
     'plugin:prettier/recommended',
     'prettier/@typescript-eslint',
-    'prettier/unicorn',
   ],
   plugins: ['prettier'],
   rules: {
