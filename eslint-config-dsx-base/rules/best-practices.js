@@ -41,5 +41,26 @@ module.exports = {
         jsx: 'never',
       },
     ],
+    'default-case-last': 'error',
+    'id-denylist': ['error', 'data', 'err', 'e', 'cb', 'callback'],
+    'no-loss-of-precision': 'error',
+    'no-promise-executor-return': 'error',
+    'no-restricted-exports': 'off',
+    'no-unreachable-loop': 'error',
+    'no-useless-backreference': 'error',
   },
+  overrides: [
+    {
+      files: [
+        'src/components/**/*.test.{j,t}s?(x)',
+        '**/__tests__/*.{j,t}s?(x)',
+        '**/tests/unit/**/*.spec.{j,t}s?(x)',
+      ],
+      env: {
+        'jest/globals': true,
+      },
+      plugins: ['jest'],
+      extends: ['plugin:jest/recommended', 'plugin:jest/style'],
+    },
+  ],
 };

@@ -38,13 +38,6 @@ module.exports = {
         jsx: 'never',
       },
     ],
-    'default-case-last': 'error',
-    'id-denylist': ['error', 'data', 'err', 'e', 'cb', 'callback'],
-    'no-loss-of-precision': 'error',
-    'no-promise-executor-return': 'error',
-    'no-restricted-exports': 'off',
-    'no-unreachable-loop': 'error',
-    'no-useless-backreference': 'error',
     'eslint-comments/require-description': 'error',
   },
 };
