@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-dsx-base",
-  "version": "2.0.9",
+  "version": "2.1.0",
   "description": "DSX's base JS Eslint config",
   "main": "index.js",
   "scripts": {
@@ -79,6 +79,7 @@
     "babel-tape-runner": "^3.0.0",
     "eclint": "^2.8.1",
     "eslint-find-rules": "^3.4.0",
+    "eslint-plugin-no-secrets": "^0.6.8",
     "in-publish": "^2.0.1",
     "safe-publish-latest": "^1.1.4",
     "tape": "^4.13.2"
