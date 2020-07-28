@@ -1,6 +1,6 @@
 module.exports = {
   extends: ['airbnb-base', 'plugin:unicorn/recommended'],
-  plugins: ['unicorn', 'optimize-regex'],
+  plugins: ['unicorn', 'optimize-regex', 'no-secrets'],
   settings: {
     'import/resolver': {
       node: {
@@ -11,6 +11,7 @@ module.exports = {
   },
   parser: 'babel-eslint',
   rules: {
+    'no-secrets/no-secrets': 'error',
     'optimize-regex/optimize-regex': 'warn',
     'handle-callback-err': ['error', '^.*(e|E)rr'],
     'global-require': 'warn',
