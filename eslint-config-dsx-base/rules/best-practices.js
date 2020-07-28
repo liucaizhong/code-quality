@@ -1,6 +1,6 @@
 module.exports = {
   extends: ['airbnb-base', 'plugin:unicorn/recommended'],
-  plugins: ['unicorn', 'optimize-regex'],
+  plugins: ['unicorn', 'optimize-regex', 'no-secrets'],
   settings: {
     'import/resolver': {
       node: {
@@ -11,6 +11,7 @@ module.exports = {
   },
   parser: 'babel-eslint',
   rules: {
+    'no-secrets/no-secrets': 'error',
     'optimize-regex/optimize-regex': 'warn',
     'handle-callback-err': ['error', '^.*(e|E)rr'],
     'global-require': 'warn',
@@ -41,5 +42,26 @@ module.exports = {
         jsx: 'never',
       },
     ],
+    'default-case-last': 'error',
+    'id-denylist': ['error', 'data', 'err', 'e', 'cb', 'callback'],
+    'no-loss-of-precision': 'error',
+    'no-promise-executor-return': 'error',
+    'no-restricted-exports': 'off',
+    'no-unreachable-loop': 'error',
+    'no-useless-backreference': 'error',
   },
+  overrides: [
+    {
+      files: [
+        'src/components/**/*.test.{j,t}s?(x)',
+        '**/__tests__/*.{j,t}s?(x)',
+        '**/tests/unit/**/*.spec.{j,t}s?(x)',
+      ],
+      env: {
+        'jest/globals': true,
+      },
+      plugins: ['jest'],
+      extends: ['plugin:jest/recommended', 'plugin:jest/style'],
+    },
+  ],
 };
