@@ -128,5 +128,5 @@
   ],
   "eslint.options": {
     "configFile": ".eslintrc"
-  },
+  }
 }
