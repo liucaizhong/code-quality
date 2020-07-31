@@ -24,7 +24,7 @@ Our default export contains all of our react ESLint rules, including ECMAScript 
 
 ### eslint-config/dsx-react/typescript
 
-This entry point enables the linting rules for typecript. To use, add `"extends": ["dsx-react", "dsx-react/typescript"]` to your `.eslintrc`
+This entry point enables the linting rules for typescript. To use, add `"extends": ["dsx-react", "dsx-react/typescript"]` to your `.eslintrc`
 
 ### eslint-config/dsx-react/prettier
 

@@ -24,7 +24,7 @@ Our default export contains all of our ESLint rules, including ECMAScript 6+.
 
 ### eslint-config/dsx-base/typescript
 
-This entry point enables the linting rules for typecript. To use, add `"extends": ["dsx-base", "dsx-base/typescript"]` to your `.eslintrc`
+This entry point enables the linting rules for typescript. To use, add `"extends": ["dsx-base", "dsx-base/typescript"]` to your `.eslintrc`
 
 ### eslint-config/dsx-base/prettier
 
