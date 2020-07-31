@@ -6,17 +6,13 @@ end_of_line = lf
 indent_style = space
 insert_final_newline = true
 trim_trailing_whitespace = true
-
-[*.{js, ts, jsx, tsx, vue}]
 indent_size = 2
 max_line_length = 80
 
 [*.py]
 indent_size = 4
-max_line_length = 80
 
 [*.html]
-indent_size = 2
 max_line_length = off
 
 [*.{yml,yaml}]
@@ -28,14 +24,12 @@ indent_size = 4
 [Makefile]
 indent_size = 4
 
-[*.{md,markdown,mdx}]
+[*.{md,markdown}]
 indent_size = 4
 max_line_length = off
 
 [*.json]
-indent_size = 2
 max_line_length = off
 
 [COMMIT_EDITMSG]
 indent_size = 4
-max_line_length = 80
