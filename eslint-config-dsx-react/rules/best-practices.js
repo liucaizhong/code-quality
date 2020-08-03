@@ -39,5 +39,8 @@ module.exports = {
       },
     ],
     'eslint-comments/require-description': 'error',
+    'id-denylist': ['error', 'data', 'err', 'e', 'cb', 'callback'],
+    'no-promise-executor-return': 'error',
+    'no-unreachable-loop': 'error',
   },
 };

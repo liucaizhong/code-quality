@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-dsx-react",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "DSX's react Eslint config",
   "main": "index.js",
   "scripts": {

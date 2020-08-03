@@ -14,9 +14,9 @@ Our default export contains all of our ESLint rules, including ECMAScript 6+.
 
 1. Install the correct versions of each package, which are listed by the command:
 
-  ```sh
-  npm i -D eslint-config-dsx-base
-  ```
+    ```sh
+    npm i -D eslint-config-dsx-base
+    ```
 
   If using **yarn**, run `yarn add -D eslint-config-dsx-base` for each listed peer dependency.
 

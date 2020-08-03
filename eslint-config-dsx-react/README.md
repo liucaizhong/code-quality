@@ -14,11 +14,11 @@ Our default export contains all of our react ESLint rules, including ECMAScript 
 
 1. Install the correct versions of each package, which are listed by the command:
 
-  ```sh
-  npm i -D eslint-config-dsx-react
-  ```
+    ```sh
+    npm i -D eslint-config-dsx-react
+    ```
 
-  If using **yarn**, run `yarn add -D eslint-config-dsx-react` for each listed peer dependency.
+    If using **yarn**, run `yarn add -D eslint-config-dsx-react` for each listed peer dependency.
 
 2. Add "extends": "dsx-react" to your .eslintrc.
 
