@@ -18,7 +18,7 @@ Our default export contains all of our ESLint rules, including ECMAScript 6+.
     npm i -D eslint-config-dsx-base
     ```
 
-    If using **yarn**, run `yarn add -D eslint-config-dsx-base` for each listed peer dependency.
+    If using **yarn**, run `yarn add -D eslint-config-dsx-base`
 
 2. Add "extends": "dsx-base" to your .eslintrc.
 
