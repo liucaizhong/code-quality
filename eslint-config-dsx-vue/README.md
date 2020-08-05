@@ -18,7 +18,7 @@ Our default export contains all of our vue ESLint rules, including ECMAScript 6+
     npm i -D eslint-config-dsx-vue
     ```
 
-    If using **yarn**, run `yarn add -D eslint-config-dsx-vue` for each listed peer dependency.
+    If using **yarn**, run `yarn add -D eslint-config-dsx-vue`
 
 2. Add "extends": "dsx-vue" to your .eslintrc.
 
