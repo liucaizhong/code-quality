@@ -126,7 +126,7 @@
     "vue",
     "markdown"
   ],
-  "eslint.options": {
-    "configFile": ".eslintrc"
-  }
+  // "eslint.options": {
+  //   "configFile": ".eslintrc"
+  // }
 }
