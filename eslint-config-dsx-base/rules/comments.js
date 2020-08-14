@@ -3,6 +3,8 @@ module.exports = {
   plugins: ['jsdoc', 'eslint-comments'],
   rules: {
     'no-inline-comments': 'error',
+    'jsdoc/require-throws': 'error',
+    'eslint-comments/require-description': 'error',
     'eslint-comments/no-unlimited-disable': 'error',
     'eslint-comments/disable-enable-pair': 'error',
     'eslint-comments/no-duplicate-disable': 'error',

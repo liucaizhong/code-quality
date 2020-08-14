@@ -113,7 +113,6 @@
     "vue",
     "markdown"
   ],
-  "eslint.quiet": true,
   "eslint.run": "onType",
   "eslint.format.enable": true,
   "eslint.nodePath": "node_modules",
@@ -126,7 +125,18 @@
     "vue",
     "markdown"
   ],
-  // "eslint.options": {
-  //   "configFile": ".eslintrc"
-  // }
+  // leave it empty so that eslint can work for different eslint config
+  // for example `components/ui-react-shell/.eslintrc`
+  // otherwise it only resolve the root level `.eslintrc` but cannnot found it
+  "eslint.options": {
+  },
+  //-------- Python Configuration --------
+  "[python]": {
+    "editor.formatOnSave": true
+  },
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": [
+    "--line-length",
+    "88"
+  ]
 }
