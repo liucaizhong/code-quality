@@ -1,3 +1,8 @@
+2.3.0 / 2021-02-23
+==================
+
+- [break] upgrade dependencies to the latest version
+
 2.2.0 / 2020-08-14
 ==================
 

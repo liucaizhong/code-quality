@@ -49,6 +49,8 @@ module.exports = {
     'no-restricted-exports': 'off',
     'no-unreachable-loop': 'error',
     'no-useless-backreference': 'error',
+    'no-nonoctal-decimal-escape': 'error',
+    'no-unsafe-optional-chaining': 'error',
   },
   overrides: [
     {
