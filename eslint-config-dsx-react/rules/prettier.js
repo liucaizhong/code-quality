@@ -1,10 +1,5 @@
 module.exports = {
-  extends: [
-    'prettier/unicorn',
-    'prettier/react',
-    'plugin:prettier/recommended',
-    'prettier/@typescript-eslint',
-  ],
+  extends: ['plugin:prettier/recommended'],
   plugins: ['prettier'],
   rules: {
     'prettier/prettier': [

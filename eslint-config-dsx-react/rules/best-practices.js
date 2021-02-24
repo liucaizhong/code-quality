@@ -42,5 +42,7 @@ module.exports = {
     'id-denylist': ['error', 'data', 'err', 'e', 'cb', 'callback'],
     'no-promise-executor-return': 'error',
     'no-unreachable-loop': 'error',
+    'react/jsx-newline': 'off',
+    'react/jsx-no-constructed-context-values': 'off',
   },
 };
